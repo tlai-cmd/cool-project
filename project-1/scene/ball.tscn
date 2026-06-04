@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://2nw4kgkw5wa6"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_4a1xm"]
+radius = 20.22375
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_d8dhm"]
+bg_color = Color(0.6577562, 0.6434834, 0.6312334, 1)
+corner_radius_top_left = 999
+corner_radius_top_right = 999
+corner_radius_bottom_right = 999
+corner_radius_bottom_left = 999
+
+[node name="Area2D" type="Area2D" unique_id=1171776331]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1842954544]
+shape = SubResource("CircleShape2D_4a1xm")
+
+[node name="Panel" type="Panel" parent="." unique_id=1797361954]
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_d8dhm")
